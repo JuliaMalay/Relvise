@@ -184,6 +184,9 @@ h6 {
 .page__whoweare {
 }
 .page__clients {
+  margin: 0px 0px 10px 0px;
+}
+.page__subscribe {
 }
 /*    MAIN-BLOCK ---------------------------------------------------------------------- */
 .main-block {
@@ -649,6 +652,106 @@ h6 {
 @media (max-width: 767px) {
   .clients {
     padding: 20px 0px;
+  }
+}
+/*    SUBSCRIBE ---------------------------------------------------------------------- */
+
+.subscribe {
+  position: relative;
+  padding: 0px 0px 20px 0px;
+}
+.subscribe::before {
+  content: '';
+  background-color: #252b42;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 77px;
+}
+.subscribe__container {
+}
+.subscribe__body {
+  position: relative;
+
+  background-color: #17213c;
+
+  align-items: center;
+  padding: 30px 50px;
+  border-radius: 2px;
+
+  z-index: 2;
+}
+.subscribe__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 133%;
+  letter-spacing: 0.1px;
+  color: #ffffff;
+}
+.subscribe__form {
+  flex: 0 1 50%;
+  display: flex;
+  align-items: center;
+}
+.subscribe__input {
+  width: 100%;
+  flex: 1 1 auto;
+  padding: 0 22px;
+  min-height: 58px;
+  border-radius: 5px 0px 0px 5px;
+  background: #f9f9f9;
+  border: 1px solid #e6e6e6;
+  color: #737373;
+  outline: none;
+  line-height: 200%;
+  letter-spacing: 0.2px;
+  font-family: Montserrat;
+  border-right: 0;
+}
+.subscribe__input:hover {
+  color: #000;
+}
+.subscribe__button {
+  font-family: Montserrat;
+  background: #ff7b47;
+  border: 1px solid #e6e6e6;
+  border-radius: 0px 5px 5px 0px;
+  display: flex;
+  min-height: 58px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  padding: 0 22px;
+}
+@media (min-width: 1070px) {
+  .subscribe__body {
+    margin: 0 30px;
+  }
+}
+@media (min-width: 810px) {
+  .subscribe__body {
+    display: flex;
+    justify-content: space-between;
+  }
+  .subscribe__title {
+    max-width: 266px;
+  }
+}
+@media (max-width: 810px) {
+  .subscribe__title {
+    margin: 0px 0px 20px 0px;
+  }
+  .subscribe__body {
+    margin: 0px -15px;
+    padding: 20px 15px;
+  }
+  .subscribe__button {
+    padding: 0 15px;
+  }
+  .subscribe__input {
+    padding: 0 15px;
   }
 }
 /*    FOOTER ---------------------------------------------------------------------- */
